@@ -22,13 +22,12 @@ html { scroll-behavior: smooth; }
 .progress-bar {
   position: fixed; top: 0; left: 0; z-index: 200;
   height: 2px; background: var(--green2);
-  transition: width 0.1s linear;
   box-shadow: 0 0 6px rgba(74,107,74,0.4);
 }
 
 /* ── NAV ── */
 .nav {
-  position: fixed; top: 2px; left: 0; right: 0; z-index: 100;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
   padding: 28px 56px; transition: all 0.5s ease;
 }
@@ -382,4 +381,14 @@ footer {
 @keyframes ticker {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-33.33%); }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    padding-top: 80px;
+  }
+  .hero-right {
+    display: none;
+  }
 }

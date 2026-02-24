@@ -39,6 +39,8 @@ export const translations = {
       { name: "Herre klipning (almindelig)"},
       { name: "Dame klipning"},
       { name: "Børne klipning"},],
+    reviews_next: "Vis næste →",
+    address_label: "Adresse",
   },
   en: {
     nav: ["Info", "Gallery", "About"],
@@ -80,6 +82,8 @@ export const translations = {
       { name: "Men's cut (regular)"},
       { name: "Women's cut"},
       { name: "Children's cut"},],
+    reviews_next: "Show next →",
+    address_label: "Address",
   },
 };
 
