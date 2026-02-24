@@ -350,3 +350,36 @@ footer {
 .reviews-next:hover {
   background: var(--green); color: var(--bg);
 }
+
+.services-ticker {
+  overflow: hidden;
+  background: var(--green);
+  padding: 18px 0;
+  white-space: nowrap;
+}
+.services-track {
+  display: inline-block;
+  animation: ticker 20s linear infinite;
+}
+.services-ticker-item {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bg);
+  margin-right: 60px;
+}
+.services-ticker-item em {
+  font-style: normal;
+  color: var(--sand);
+}
+.services-dot {
+  margin-left: 60px;
+  color: var(--bg2);
+  opacity: 0.5;
+}
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
+}
