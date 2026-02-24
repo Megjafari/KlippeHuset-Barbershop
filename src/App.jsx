@@ -47,7 +47,7 @@ export default function App() {
       {/* Nav */}
       <nav className={`nav${scrolled ? " scrolled" : ""}`}>
         <div className="nav-logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          Klippe Huset
+          <img src="/kh-logo.png" alt="Klippe Huset" style={{ height: "60px", objectFit: "contain" }} />
         </div>
         <div className="nav-right">
           {t.nav.map((label, i) => {
@@ -123,12 +123,26 @@ export default function App() {
           </div>
         </div>
         <div className="info-card">
-          <div className="info-card-label">{t.contact_label}</div>
+          
           <div className="info-contact-name">Hafizullah Mir</div>
           <a href="tel:+4598132125" className="info-contact-link">+45 98 13 21 25</a>
+          <a href="https://www.facebook.com/klippehuset" className="info-contact-link" target="_blank" rel="noopener noreferrer">
+            Facebook
+        </a>
           <div className="info-contact-link" style={{ marginTop: 10 }}>{t.address}, Aalborg</div>
         </div>
       </section>
+
+      {/* Services */}
+      <div className="services-ticker">
+        <div className="services-track">
+          {[...t.services, ...t.services, ...t.services].map((s, i) => (
+            <span key={i} className="services-ticker-item">
+              {s.name} <em>{s.price}</em> <span className="services-dot">✦</span>
+            </span>
+          ))}
+        </div>
+      </div>
 
       {/* Gallery */}
       <section id="gallery" className="gallery-section">
