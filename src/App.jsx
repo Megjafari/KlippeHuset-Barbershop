@@ -126,7 +126,7 @@ export default function App() {
           
           <div className="info-contact-name">Hafizullah Mir</div>
           <a href="tel:+4598132125" className="info-contact-link">+45 98 13 21 25</a>
-          <a href="https://www.facebook.com/klippehuset" className="info-contact-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/KlippeHusetAalborg" className="info-contact-link" target="_blank" rel="noopener noreferrer">
             Facebook
         </a>
           <div className="info-contact-link" style={{ marginTop: 10 }}>{t.address}, Aalborg</div>
@@ -219,7 +219,7 @@ export default function App() {
         <div className="reviews-note">
           <span>Google Reviews</span>
           <button className="reviews-next" onClick={nextReviews}>
-            Vis næste →
+            {t.reviews_next}
           </button>
         </div>
       </section>
@@ -235,10 +235,10 @@ export default function App() {
         <div className="map-inner">
           <div className="map-detail">
             <div>
-              <div className="map-detail-label">{t.address}</div>
-              <div className="map-detail-val">
-                Niels Ebbesensgade 15<br />9000 Aalborg
-              </div>
+          <div className="map-detail-label">{t.address_label}</div>
+          <div className="map-detail-val">
+            Niels Ebbesensgade 15<br />9000 Aalborg
+          </div>
             </div>
             <div>
               <div className="map-detail-label">Telefon</div>
