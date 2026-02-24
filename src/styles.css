@@ -270,8 +270,16 @@ html { scroll-behavior: smooth; }
   letter-spacing: 0.15em; text-transform: uppercase; color: var(--green2);
 }
 .reviews-note {
-  font-family: 'Jost', sans-serif; font-size: 10px; letter-spacing: 0.12em;
-  color: var(--brown3); opacity: 0.4; margin-top: 40px; text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 48px;
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brown3);
 }
 
 /* ── MAP ── */

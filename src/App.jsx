@@ -33,12 +33,7 @@ export default function App() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-useEffect(() => {
-  const id = setInterval(() => {
-    setActiveReview((v) => (v + 1) % reviews.length);
-  }, 5000);
-  return () => clearInterval(id);
-}, []);
+
 
   const scroll = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
@@ -109,29 +104,28 @@ useEffect(() => {
           <div className="info-card-label">{t.prices_label}</div>
           <div className="info-row">
             <span className="info-row-key">{t.men}</span>
-            <span className="info-row-val accent">139 kr</span>
+            <span className="info-row-val accent">200 kr</span>
           </div>
           <div className="info-row">
             <span className="info-row-key">{t.children}</span>
-            <span className="info-row-val accent">99 kr</span>
+            <span className="info-row-val accent">150 kr</span>
           </div>
         </div>
         <div className="info-card">
           <div className="info-card-label">{t.hours_label}</div>
           <div className="info-row">
             <span className="info-row-key">{t.weekday}</span>
-            <span className="info-row-val">09:00–18:00</span>
+            <span className="info-row-val">10:00–18:00</span>
           </div>
           <div className="info-row">
             <span className="info-row-key">{t.saturday}</span>
-            <span className="info-row-val">10:00–15:00</span>
+            <span className="info-row-val">10:00–16:00</span>
           </div>
         </div>
         <div className="info-card">
           <div className="info-card-label">{t.contact_label}</div>
           <div className="info-contact-name">Hafizullah Mir</div>
-          <a href="tel:+4598XXXXXX" className="info-contact-link">+45 98 XX XX XX</a>
-          <a href="mailto:info@klippehuset.dk" className="info-contact-link">info@klippehuset.dk</a>
+          <a href="tel:+4598132125" className="info-contact-link">+45 98 13 21 25</a>
           <div className="info-contact-link" style={{ marginTop: 10 }}>{t.address}, Aalborg</div>
         </div>
       </section>
@@ -208,12 +202,12 @@ useEffect(() => {
             </Reveal>
           ))}
         </div>
-<div className="reviews-note">
-  <button className="reviews-next" onClick={nextReviews}>
-    Vis næste →
-  </button>
-  <span>Google Reviews</span>
-</div>
+        <div className="reviews-note">
+          <span>Google Reviews</span>
+          <button className="reviews-next" onClick={nextReviews}>
+            Vis næste →
+          </button>
+        </div>
       </section>
 
       {/* Map */}
@@ -235,14 +229,10 @@ useEffect(() => {
             <div>
               <div className="map-detail-label">Telefon</div>
               <div className="map-detail-val">
-                <a href="tel:+4598XXXXXX">+45 98 XX XX XX</a>
+                <a href="tel:+4598132125">+45 98 13 21 25</a>
               </div>
             </div>
             <div>
-              <div className="map-detail-label">Email</div>
-              <div className="map-detail-val">
-                <a href="mailto:info@klippehuset.dk">info@klippehuset.dk</a>
-              </div>
             </div>
           </div>
           <div className="map-embed">
