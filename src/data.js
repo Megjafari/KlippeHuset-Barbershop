@@ -35,8 +35,7 @@ export const translations = {
     services_title: "Vores",
     services_em: "ydelser",
     services: [
-      { name: "Herre klipning (fade)"},
-      { name: "Herre klipning (almindelig)"},
+      { name: "Herre klipning"},
       { name: "Dame klipning"},
       { name: "Børne klipning"},],
     reviews_next: "Vis næste →",
@@ -78,8 +77,7 @@ export const translations = {
     services_title: "Our",
     services_em: "services",
     services: [
-      { name: "Men's cut (fade)",},
-      { name: "Men's cut (regular)"},
+      { name: "Men's cut",},
       { name: "Women's cut"},
       { name: "Children's cut"},],
     reviews_next: "Show next →",
